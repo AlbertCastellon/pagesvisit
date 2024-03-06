@@ -1,0 +1,27 @@
+body {
+    background-color: indigo;
+    text-align: center;
+}
+h1 {
+    color: coral;
+    font-size: 50px;
+}
+#contadorVisitas {
+    font-size: 35px;
+    font-weight: bold;
+    color: gold;
+}
+
+p {
+    font-size: 30px;
+    color: white;
+}
+
+button {
+    transform: scale(3);
+    background-color: firebrick;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,12 +1,23 @@
 const clearBtn = document.getElementById('btnReestablecer');
 const contadorVisitas = document.getElementById('contadorVisitas');
-let contador = 0;
-localStorage.setItem('contador', `${contador}`)
+
+localStorage.setItem('0', 0)
+contadorVisitas.innerHTML = `${localStorage.length}`
+window.addEventListener('load', () => {
+
+        localStorage.setItem(`${localStorage.length}`, `${localStorage.length}`)
+
+    
+})
+    
+
+
+
 clearBtn.addEventListener('click', () => {
-    contador = 0;
-    localStorage.setItem('contador', `${contador}`)
-    contadorVisitas.innerHTML = localStorage.getItem('contador')
+
+    localStorage.clear()
+    contadorVisitas.innerHTML = localStorage.length
 })
 
-contadorVisitas.innerHTML = localStorage.getItem('contador')
+contadorVisitas.innerHTML = localStorage.length
 console.log(localStorage)
